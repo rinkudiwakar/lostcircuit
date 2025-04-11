@@ -16,24 +16,6 @@ const Footer: React.FC = () => {
             <Instagram className="h-5 w-5 text-white" />
             <span className="text-white font-medium">Instagram</span>
           </a>
-          <a 
-            href="https://facebook.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="flex items-center space-x-2 bg-white/20 hover:bg-white/30 px-4 py-2 rounded-full transition-colors"
-          >
-            <Facebook className="h-5 w-5 text-white" />
-            <span className="text-white font-medium">Facebook</span>
-          </a>
-          <a 
-            href="https://twitter.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="flex items-center space-x-2 bg-white/20 hover:bg-white/30 px-4 py-2 rounded-full transition-colors"
-          >
-            <Twitter className="h-5 w-5 text-white" />
-            <span className="text-white font-medium">Twitter</span>
-          </a>
         </div>
       </div>
       <div className="text-center mt-2 text-white/70 text-sm">

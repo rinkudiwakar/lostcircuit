@@ -8,7 +8,7 @@ import Footer from './Footer';
 import { Trophy, Gift, PartyPopper, Heart, Lock } from "lucide-react";
 
 // The password to unlock the treasure
-const TREASURE_CODE = "hunt2024";
+const TREASURE_CODE = "1947";
 
 const TreasureHuntFinale: React.FC = () => {
   const [unlocked, setUnlocked] = useState(false);
