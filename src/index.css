@@ -7,11 +7,11 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 200 80% 90%; /* Sky Blue background */
     --foreground: 222.2 84% 4.9%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 215 80% 30%; /* Dark Blue card */
+    --card-foreground: 210 40% 98%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
@@ -19,7 +19,7 @@
     --primary: 35 91% 55%; /* Gold */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 25 95% 53%; /* Copper */
+    --secondary: 199 89% 75%; /* Lighter Blue for header/footer */
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;

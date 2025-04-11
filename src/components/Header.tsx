@@ -4,17 +4,25 @@ import { CircuitBoard } from 'lucide-react';
 
 const Header: React.FC = () => {
   return (
-    <header className="w-full py-3 px-4 bg-gradient-to-r from-amber-600 to-yellow-500 shadow-md">
+    <header className="w-full py-3 px-4 bg-secondary shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-2">
-          {/* College Logo Placeholder - Replace with actual logo */}
-          <div className="h-12 w-12 bg-white rounded-full flex items-center justify-center">
-            <span className="text-amber-700 font-bold text-xs">COLLEGE</span>
+          {/* College Logo */}
+          <div className="h-12 w-12 bg-white rounded-full flex items-center justify-center overflow-hidden shadow-sm">
+            <img
+              src="https://source.unsplash.com/photo-1518770660439-4636190af475?w=48&h=48&fit=crop&crop=center"
+              alt="College Logo"
+              className="h-10 w-10 object-cover"
+            />
           </div>
           
-          {/* Club Logo Placeholder - Replace with actual logo */}
-          <div className="h-10 w-10 bg-white rounded-full flex items-center justify-center">
-            <span className="text-amber-700 font-bold text-xs">CLUB</span>
+          {/* Club Logo */}
+          <div className="h-10 w-10 bg-white rounded-full flex items-center justify-center overflow-hidden shadow-sm">
+            <img
+              src="https://source.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=40&h=40&fit=crop&crop=center"
+              alt="Club Logo"
+              className="h-8 w-8 object-cover"
+            />
           </div>
         </div>
         

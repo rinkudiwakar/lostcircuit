@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import PasswordInput from './PasswordInput';
@@ -32,11 +33,11 @@ const TreasureHuntFinale: React.FC = () => {
     <div className="min-h-screen w-full flex flex-col">
       <Header />
       
-      <div className="flex-grow treasure-bg flex items-center justify-center p-4">
+      <div className="flex-grow bg-background flex items-center justify-center p-4">
         <ConfettiEffect active={showConfetti} />
         
-        <Card className={`treasure-card w-full max-w-md mx-auto overflow-hidden ${unlocked ? 'scale-in' : ''}`}>
-          <CardHeader className="bg-gradient-to-r from-amber-500 to-yellow-600 text-white">
+        <Card className={`w-full max-w-md mx-auto overflow-hidden bg-card text-card-foreground shadow-xl ${unlocked ? 'scale-in' : ''}`}>
+          <CardHeader className="bg-gradient-to-r from-blue-700 to-blue-900 text-white">
             <CardTitle className="text-center text-3xl md:text-4xl treasure-font">
               {unlocked ? (
                 <span className="flex items-center justify-center">
@@ -57,7 +58,7 @@ const TreasureHuntFinale: React.FC = () => {
             </CardDescription>
           </CardHeader>
           
-          <CardContent className="p-6">
+          <CardContent className="p-6 bg-white">
             {unlocked ? (
               <div className="space-y-6 text-center fade-in">
                 <div className="text-4xl md:text-5xl font-bold text-center mb-4 treasure-font text-yellow-600 bounce-in">
@@ -69,12 +70,12 @@ const TreasureHuntFinale: React.FC = () => {
                   You won the Treasure Hunt!
                 </p>
                 
-                <div className="p-4 bg-amber-50 rounded-xl border-2 border-amber-200 shadow-inner">
+                <div className="p-4 bg-blue-50 rounded-xl border-2 border-blue-200 shadow-inner">
                   <div className="flex items-center mb-2">
-                    <Gift className="h-6 w-6 mr-2 text-secondary" />
+                    <Gift className="h-6 w-6 mr-2 text-blue-600" />
                     <h3 className="text-xl font-semibold text-gray-800">Prize Pool:</h3>
                   </div>
-                  <p className="text-3xl font-bold text-amber-600">₹5000</p>
+                  <p className="text-3xl font-bold text-blue-600">₹5000</p>
                 </div>
                 
                 <div className="pt-4">
@@ -86,8 +87,8 @@ const TreasureHuntFinale: React.FC = () => {
             ) : (
               <div className="space-y-6">
                 <div className="text-center mb-6">
-                  <div className="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-amber-300 shadow-md">
-                    <Lock className="h-8 w-8 text-amber-700" />
+                  <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-blue-300 shadow-md">
+                    <Lock className="h-8 w-8 text-blue-700" />
                   </div>
                   <p className="text-gray-600">
                     You've reached the final step! Enter the code you discovered during the treasure hunt.
