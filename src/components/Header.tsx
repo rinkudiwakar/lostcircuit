@@ -10,7 +10,7 @@ const Header: React.FC = () => {
           {/* College Logo */}
           <div className="h-12 w-12 bg-white rounded-full flex items-center justify-center overflow-hidden shadow-sm">
             <img
-              src="https://source.unsplash.com/photo-1518770660439-4636190af475?w=48&h=48&fit=crop&crop=center"
+              src="/college_logo.jpg" // Replace with your college logo URL
               alt="College Logo"
               className="h-10 w-10 object-cover"
             />
@@ -19,7 +19,7 @@ const Header: React.FC = () => {
           {/* Club Logo */}
           <div className="h-10 w-10 bg-white rounded-full flex items-center justify-center overflow-hidden shadow-sm">
             <img
-              src="https://source.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=40&h=40&fit=crop&crop=center"
+              src="/logo.png"
               alt="Club Logo"
               className="h-8 w-8 object-cover"
             />

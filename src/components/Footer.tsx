@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto flex justify-center items-center">
         <div className="flex space-x-4">
           <a 
-            href="https://instagram.com" 
+            href="https://www.instagram.com/ee__nitj/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center space-x-2 bg-white/20 hover:bg-white/30 px-4 py-2 rounded-full transition-colors"

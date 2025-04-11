@@ -94,6 +94,14 @@
   body {
     @apply bg-background text-foreground;
   }
+    .dark input,
+    .dark textarea {
+      @apply text-foreground;
+    }
+        input,
+        textarea {
+          @apply text-foreground;
+        }
 }
 
 .treasure-font {
