@@ -52,19 +52,12 @@ const PasswordInput: React.FC<PasswordInputProps> = ({ correctPassword, onSucces
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className={`pl-10 border-2 border-secondary/80 p-6 text-xl bg-white/80 ${
-                isShaking ? "animate-[shake_0.5s_ease-in-out]" : ""
+                isShaking ? "animate-shake" : ""
               }`}
               style={{ 
                 animation: isShaking ? "shake 0.5s ease-in-out" : "none" 
               }}
             />
-            <style jsx>{`
-              @keyframes shake {
-                0%, 100% { transform: translateX(0); }
-                20%, 60% { transform: translateX(-10px); }
-                40%, 80% { transform: translateX(10px); }
-              }
-            `}</style>
           </div>
         </div>
         
@@ -75,6 +68,19 @@ const PasswordInput: React.FC<PasswordInputProps> = ({ correctPassword, onSucces
           <Key className="mr-2 h-5 w-5" /> Unlock Treasure
         </Button>
       </div>
+
+      {/* Adding the animation keyframes to the document */}
+      <style dangerouslySetInnerHTML={{ __html: `
+        @keyframes shake {
+          0%, 100% { transform: translateX(0); }
+          20%, 60% { transform: translateX(-10px); }
+          40%, 80% { transform: translateX(10px); }
+        }
+        
+        .animate-shake {
+          animation: shake 0.5s ease-in-out;
+        }
+      `}} />
     </form>
   );
 };
